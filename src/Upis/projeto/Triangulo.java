@@ -56,7 +56,7 @@ public class Triangulo implements IFiguraBidimensional {
     }
 
     @Override
-    public int perimetro(){
+    public double perimetro(){
         return ladoA + ladoB + ladoC;
     }
 

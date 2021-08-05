@@ -29,7 +29,7 @@ public class Quadrado implements IFiguraBidimensional {
     }
 
     @Override
-    public int perimetro() {
+    public double perimetro() {
         return lado * 4;
     }
 

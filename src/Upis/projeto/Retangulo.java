@@ -44,7 +44,7 @@ public class Retangulo implements IFiguraBidimensional {
     }
 
     @Override
-    public int perimetro() {
+    public double perimetro() {
         return comprimento + comprimento + largura + largura;
     }
 

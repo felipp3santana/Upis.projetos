@@ -2,6 +2,6 @@ package Upis.projeto;
 
 public interface IFiguraBidimensional {
 
-    int perimetro();
+    double perimetro();
     double area();
 }
