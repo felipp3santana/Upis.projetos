@@ -1,10 +1,10 @@
 package Upis.projeto;
 
-public class Triangulo {
+public class Triangulo implements IFiguraBidimensional {
 
-        private int ladoA;
-        private int ladoB;
-        private int ladoC;
+    private int ladoA;
+    private int ladoB;
+    private int ladoC;
 
     private boolean condicaoExistencia(int a, int b, int c){
             return Math.abs(b - c) <  a && a < b + c;
@@ -55,13 +55,15 @@ public class Triangulo {
         }
     }
 
-    public double semiPerimetro(){
-        return ((ladoA + ladoB + ladoC) / 2);
+    @Override
+    public int perimetro(){
+        return ladoA + ladoB + ladoC;
     }
 
-    public double areaTriangulo(){
-        double p = semiPerimetro();
-        return Math.sqrt(p * (p - ladoA) * (p - ladoB) * (p - ladoC));
+    @Override
+    public double area(){
+        double s = perimetro() / 2;
+        return Math.sqrt(s * (s - ladoA) * (s - ladoB) * (s - ladoC));
     }
 
     @Override
