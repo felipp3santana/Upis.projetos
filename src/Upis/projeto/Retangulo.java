@@ -16,7 +16,7 @@ public class Retangulo implements IFiguraBidimensional {
 
     public Retangulo(int comprimento, int largura) {
         if (!condicaoExistencia(comprimento, largura)) {
-            throw new RuntimeException("Impossivel criar triangulo!");
+            throw new RuntimeException("Impossivel criar retangulo!");
         }
         this.comprimento = comprimento;
         this.largura = largura;
