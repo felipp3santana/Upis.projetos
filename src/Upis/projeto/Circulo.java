@@ -3,7 +3,6 @@ package Upis.projeto;
 public class Circulo implements IFiguraBidimensional {
 
     private double diametro;
-    private final double pi = 3.14;
 
     public Circulo(double diametro) {
         if(!condicaoExistencia(diametro)) {
@@ -32,13 +31,13 @@ public class Circulo implements IFiguraBidimensional {
     @Override
     public double perimetro() {
         double r = raio();
-        return (2 * pi) * r;
+        return (2 * Math.PI) * r;
     }
 
     @Override
     public double area() {
         double r = raio();
-        return (r * r) * pi;
+        return (r * r) * Math.PI;
     }
 
     @Override

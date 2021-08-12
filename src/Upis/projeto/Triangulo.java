@@ -35,6 +35,27 @@ public class Triangulo implements IFiguraBidimensional {
         }
     }
 
+    public void setLado(int ladoA) {
+        if (condicaoExistencia(ladoA, this.ladoB, this.ladoC)){
+            this.ladoA = ladoA;
+        }
+    }
+
+    public void setLado(int ladoA, int ladoB) {
+        if (condicaoExistencia(ladoA, ladoB, this.ladoC)){
+            this.ladoA = ladoA;
+            this.ladoB = ladoB;
+        }
+    }
+
+    public void setLado(int ladoA, int ladoB, int ladoC) {
+        if (condicaoExistencia(ladoA, ladoB, ladoC)){
+            this.ladoA = ladoA;
+            this.ladoB = ladoB;
+            this.ladoC = ladoC;
+        }
+    }
+
     public int getLadoB() {
         return ladoB;
     }
@@ -54,6 +75,8 @@ public class Triangulo implements IFiguraBidimensional {
             this.ladoC = ladoC;
         }
     }
+
+
 
     @Override
     public double perimetro(){

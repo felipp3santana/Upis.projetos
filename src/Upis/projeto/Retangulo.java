@@ -31,6 +31,19 @@ public class Retangulo implements IFiguraBidimensional {
         return largura;
     }
 
+    public void setLado(int comprimento) {
+        if (condicaoExistencia(comprimento, this.largura)){
+            this.comprimento = comprimento;
+        }
+    }
+
+    public void setLado(int comprimento, int largura) {
+        if (condicaoExistencia(comprimento, largura)){
+            this.comprimento = comprimento;
+            this.largura = largura;
+        }
+    }
+
     public void setComprimento(int comprimento) {
         if (condicaoExistencia(comprimento, this.largura)){
             this.comprimento = comprimento;
