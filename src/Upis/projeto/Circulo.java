@@ -4,6 +4,10 @@ public class Circulo implements IFiguraBidimensional {
 
     private double diametro;
 
+    public Circulo() {
+        this.diametro = 1;
+    }
+
     public Circulo(double diametro) {
         if(!condicaoExistencia(diametro)) {
             throw new RuntimeException("Impossivel criar circulo!");
